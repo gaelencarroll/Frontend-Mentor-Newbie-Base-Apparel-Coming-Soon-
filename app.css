@@ -1,0 +1,137 @@
+:root{
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --drak-grayish-red: hsl(0, 6%, 24%);
+    --gradient-one-a: hsl(0, 0%, 100%);
+    --gradient-one-b: hsl(0, 100%, 98%);
+    --gradient-two-a: hsl(0, 80%, 86%);
+    --gradient-two-b: hsl(0, 74%, 74%);
+    --font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    font-family: var(--font-family);
+    margin: 0;
+}
+
+.card-section{
+    display: flex;
+    flex-direction: row;
+}
+
+.info-section{
+    padding: 150px;
+    padding-top: 50px;
+    min-width: 530px;
+    background-image: url('./images/bg-pattern-desktop.svg');
+    background-repeat: no-repeat;
+}
+
+.woman-img{
+    background-image: url('./images/hero-desktop.jpg');
+    height: 800px;
+    min-width: 610px;
+    max-width: 610px;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo{
+    background-image: url('./images/logo.svg');
+    height: 50px;
+    width: 150px;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 0;
+}
+
+.title{
+    color: var(--desaturated-red);
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 60px;
+    letter-spacing: 15px;
+    padding-top: 70px;
+}
+
+.coming-soon{
+    color: var(--drak-grayish-red);
+    font-weight: 600;
+}
+
+.description{
+    color: var(--desaturated-red);
+    line-height: 30px;
+}
+
+.email-input{
+    color: var(--drak-grayish-red);
+    height: 50px;
+    width: 445px;
+    border-radius: 30px;
+    border: 1px solid var(--desaturated-red);
+    font-family: var(--font-family);
+    padding-left: 40px;
+    position: relative;
+    font-size: 16px;
+}
+
+.email-input::placeholder{
+    color: var(--desaturated-red);
+    font-family: var(--font-family);
+    font-size: 16px;
+}
+
+.email-form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 30px;
+}
+.submit-btn{
+    background-image: url('./images/icon-arrow.svg'), linear-gradient(135deg,hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    background-repeat: no-repeat;
+    background-size: 10px, 100%;
+    background-position: center;
+    border: 1px solid var(--desaturated-red);
+    height: 54px;
+    width: 100px;
+    border-radius: 30px;
+    position: absolute;
+    left: 541px;
+    cursor: pointer;
+    box-shadow: 0px 15px 30px 1px hsl(0, 30%, 78%);
+}
+
+.email-input:focus{
+    outline: none;
+}
+
+.invalid-text{
+    color: var(--soft-red);
+    padding-left: 40px;
+    font-size: 15px;
+}
+
+.invalid-input{
+    border: 1px solid var(--soft-red);
+}
+
+.invalid-symbol{
+    background-image: url('./images/icon-error.svg');
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 450px;
+
+}
+
+.submit-btn:hover{
+    background-image: url('./images/icon-arrow.svg');
+    background-color: hsl(0, 80%, 86%);
+    border: 0;
+}
